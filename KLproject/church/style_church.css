@@ -1,0 +1,178 @@
+/* 기본 설정: 페이지 전체 */
+body {
+    margin:0;
+}
+
+/* header 설정 */
+header {
+    border-bottom:1px solid black;
+}
+
+.top-menu {
+    border-bottom: 1px solid black;
+}
+
+.top-menu a {
+    font-size: 13px;
+}
+
+.inner {
+    margin: 0 30px;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+}
+
+/* inner-left: top navigation */
+.inner-left {
+    display: flex;
+    justify-content: center;
+}
+
+.inner-left a {
+    margin:5px;
+    display:inline;
+    height:18px;
+}
+
+.inner-left img {
+    margin-right:8px;
+    width:20px;
+    height:20px;
+}
+
+/* inner-right: sign in/up */
+.inner-right {
+    text-align:right;
+}
+
+.inner-right a {
+    padding-top:10px;
+}
+
+/* 페이지 title 설정 */
+.title {
+    display:flex;
+    justify-content: center;
+    background-color:cadetblue;
+    height:73px;
+}
+
+/* 페이지 전체 a 태그 설정 */
+a {
+    color:black;
+    text-decoration: none;
+}
+
+/* 페이지 내용 그리드 설정 */
+@media(min-width:300px) {
+    #grid {
+        display:grid;
+        grid-template-columns: 170px 1fr;
+    }
+}
+
+#grid ul {
+    border-right:1px solid black;
+    width:120px;
+    margin:0;
+    padding-top:20px;
+    padding-bottom:20px;
+}
+
+/* footer */
+footer {
+    border-top:1px solid black;
+    padding:20px;
+    color: #fff;
+    background-color:#2B5566;
+}
+
+/* footer menu 화면에 맞게 조정 */
+@media(min-width:768px) {
+    footer .container {
+        display: flex;
+        max-width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .footA {
+        flex: 0 0 40%;
+    }
+
+    .footB {
+        flex: 0 0 60%;
+    }
+
+    .footC {
+        flex: 0 0 100%;
+    }
+}
+
+/* footA: site information */
+.footA a {
+    color: inherit;
+}
+
+/* footB: footer menu */
+/* 메뉴 수평 정렬 */
+@media (min-width: 768px) {
+    .footB {
+        display: flex;
+    }
+
+    .footB div {
+        flex: 1;
+    }
+
+    .footB div:not(:first-child) {
+        margin-left: 40px;
+    }
+}
+
+.footB h3 {
+    font-size: 14px;
+    border-bottom:1px solid currentColor;
+    margin-bottom:10px;
+}
+
+.footB ul {
+    list-style: none;
+    margin:0;
+    padding:0;
+}
+
+.footB a {
+    display: block;
+    padding:5px;
+    font-size:12px;
+    color: inherit;
+}
+
+.footB a:hover {
+    background-color: rgba(0,0,0,0.3);
+}
+
+/* footC: corp */
+.footC {
+    font-size: 12px;
+    text-align:center;
+}
+
+/* footD: SNS menu */
+.footD ul {
+    margin: 0;
+    padding: 0;
+    list-style:none;
+    display: flex;
+}
+
+.footD img {
+    margin-right:8px;
+    width:30px;
+    height:30px;
+}
+
+.footD img:hover {
+    background-color:rgba(0,0,0,0.3);
+}
