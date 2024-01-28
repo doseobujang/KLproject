@@ -17,9 +17,9 @@ header {
 }
 
 .inner {
-    margin: 0 30px;
     display:grid;
     grid-template-columns:1fr 1fr;
+    margin: 0 30px;
 }
 
 /* inner-left: top navigation */
@@ -29,15 +29,15 @@ header {
 }
 
 .inner-left a {
-    margin:5px;
     display:inline;
     height:18px;
+    margin:5px;    
 }
 
 .inner-left img {
-    margin-right:8px;
     width:20px;
     height:20px;
+    margin-right:8px;
 }
 
 /* inner-right: sign in/up */
@@ -53,8 +53,8 @@ header {
 .title {
     display:flex;
     justify-content: center;
-    background-color:cadetblue;
     height:73px;
+    background-color:cadetblue;
 }
 
 /* 페이지 전체 a 태그 설정 */
@@ -72,19 +72,19 @@ a {
 }
 
 #grid ul {
-    border-right:1px solid black;
     width:120px;
     margin:0;
     padding-top:20px;
     padding-bottom:20px;
+    border-right:1px solid black;
 }
 
 /* footer */
 footer {
-    border-top:1px solid black;
     padding:20px;
-    color: #fff;
+    border-top:1px solid black;
     background-color:#2B5566;
+    color: #fff;
 }
 
 /* footer menu 화면에 맞게 조정 */
@@ -131,9 +131,9 @@ footer {
 }
 
 .footB h3 {
-    font-size: 14px;
-    border-bottom:1px solid currentColor;
     margin-bottom:10px;
+    border-bottom:1px solid currentColor;
+    font-size: 14px;
 }
 
 .footB ul {
@@ -145,8 +145,8 @@ footer {
 .footB a {
     display: block;
     padding:5px;
-    font-size:12px;
     color: inherit;
+    font-size:12px;
 }
 
 .footB a:hover {
@@ -155,22 +155,22 @@ footer {
 
 /* footC: corp */
 .footC {
-    font-size: 12px;
     text-align:center;
+    font-size: 12px;
 }
 
 /* footD: SNS menu */
 .footD ul {
-    margin: 0;
-    padding: 0;
-    list-style:none;
     display: flex;
+    list-style:none;
+    margin: 0;
+    padding: 0;    
 }
 
 .footD img {
-    margin-right:8px;
     width:30px;
     height:30px;
+    margin-right:8px;
 }
 
 .footD img:hover {
