@@ -1,0 +1,264 @@
+/* 기본 설정: 페이지 전체 */
+body {
+    margin:0;
+}
+
+/* header 설정 */
+header {
+    border-bottom:1px solid black;
+}
+
+.top-menu {
+    border-bottom: 1px solid black;
+}
+
+.top-menu a {
+    font-size: 13px;
+}
+
+.inner {
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    margin: 0 30px;
+}
+
+/* inner-left: top navigation */
+.inner-left {
+    display: flex;
+    justify-content: center;
+}
+
+.inner-left a {
+    display:inline;
+    height:18px;
+    margin:5px;    
+}
+
+.inner-left img {
+    width:20px;
+    height:20px;
+    margin-right:8px;
+}
+
+/* inner-right: sign in/up */
+.inner-right {
+    text-align:right;
+}
+
+.inner-right a {
+    padding-top:10px;
+}
+
+/* 페이지 title 설정 */
+.headernav {
+    display:flex;
+    justify-content:left;
+    height: 73px;
+    background-color: #535353 ;
+    align-items: center;
+}
+
+.headernav img {
+    width: 150px;
+    height: 75%;
+    margin-left: 15px;
+    margin-right: 10px;
+}
+
+.bookmark a{
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.bookmark div{
+    float: left;
+    /*overflow: hidden; */
+}
+
+
+
+.bookmark button{
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    margin: 0;
+}
+
+.bookmark a:hover, .service:hover {
+    background-color: #535353;
+}
+
+/* 
+.bookmark div, .bookmark button{
+    float: left;
+    font-size: 25px;
+    border: none;
+    outline: none;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    background-color: inherit;
+    margin: 0;
+    overflow: hidden;
+}
+ */
+
+/* 
+.bookmark div:hover {
+    background-color:rgb(255, 255, 255);
+}
+
+.dpce, .dpct, .dpcn, .dpco, .dpch, .dpcd {
+  display: none;
+  position:absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dpce a, .dpct a, .dpcn a, .dpco a, .dpch a, .dpcd a{
+  float: none;
+  color: rgb(255, 255, 255);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  background-color: #000000;
+}
+
+.dpce a:hover{
+    background-color: #000000;
+  } 
+.dpct a:hover{
+    background-color: #000000;
+  }
+.dpcn a:hover{
+    background-color: #000000;
+  }
+.dpco a:hover{
+    background-color: #000000;
+  }
+.dpch a:hover{
+    background-color: #000000;
+  }
+.dpcd a:hover{
+    background-color: #000000;
+  }
+.bookmark:hover .dpce, .bookmark:hover .dpct, .bookmark:hover .dpcn, .bookmark:hover .dpco, .bookmark:hover .dpch, .bookmark:hover .dpcd {
+  display: block;
+} */
+
+/* 페이지 전체 a 태그 설정 */
+a {
+    color:black;
+    text-decoration: none;
+}
+
+
+
+/* footer */
+footer {
+    padding:20px;
+    border-top:1px solid black;
+    background-color:#2B5566;
+    color: #fff;
+}
+
+/* footer menu 화면에 맞게 조정 */
+@media(min-width:768px) {
+    footer .container {
+        display: flex;
+        max-width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .footA {
+        flex: 0 0 40%;
+    }
+
+    .footB {
+        flex: 0 0 60%;
+    }
+
+    .footC {
+        flex: 0 0 100%;
+    }
+}
+
+/* footA: site information */
+.footA a {
+    color: inherit;
+}
+
+/* footB: footer menu */
+/* 메뉴 수평 정렬 */
+@media (min-width: 768px) {
+    .footB {
+        display: flex;
+    }
+
+    .footB div {
+        flex: 1;
+    }
+
+    .footB div:not(:first-child) {
+        margin-left: 40px;
+    }
+}
+
+.footB h3 {
+    margin-bottom:10px;
+    border-bottom:1px solid currentColor;
+    font-size: 14px;
+}
+
+.footB ul {
+    list-style: none;
+    margin:0;
+    padding:0;
+}
+
+.footB a {
+    display: block;
+    padding:5px;
+    color: inherit;
+    font-size:12px;
+}
+
+.footB a:hover {
+    background-color: rgba(0,0,0,0.3);
+}
+
+/* footC: corp */
+.footC {
+    text-align:center;
+    font-size: 12px;
+}
+
+/* footD: SNS menu */
+.footD ul {
+    display: flex;
+    list-style:none;
+    margin: 0;
+    padding: 0;    
+}
+
+.footD img {
+    width:30px;
+    height:30px;
+    margin-right:8px;
+}
+
+.footD img:hover {
+    background-color:rgba(0,0,0,0.3);
+}
