@@ -1,0 +1,35 @@
+.FM{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 30vh;
+    font-family: luminari;
+    font-size: x-large;
+    position: relative;
+}
+.FM div{
+    flex: 1;
+    text-align: center;
+    margin: 0 100px;
+}
+.Master
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 30vh;
+    background: #ffffff;
+    font-family: luminari;
+    font-size: x-large;
+    position: relative;
+}
+.Logo
+{
+    margin: 0 100px;
+}
+.Master div{
+    flex: 1;
+    text-align: center;
+}
