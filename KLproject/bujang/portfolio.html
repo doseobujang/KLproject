@@ -4,6 +4,7 @@
         <title>포트폴리오</title>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="style_portfolio.css">
+        <script src="pageChange.js"></script>
     </head>
     <body>
         <header>
@@ -22,40 +23,58 @@
                 <li>
                     <a href="#" class="active">
                         <div class="sr-only">Main</div>
-                        <div class="hovering"></div>
+                        <div class="hovering"  onclick="Page.Change(1)"></div>
                     </a>
                 </li>
                 <li>
                     <a href="#" class="active">
                         <div class="sr-only">About</div>
-                        <div class="hovering"></div>
+                        <div class="hovering"  onclick="Page.Change(2)"></div>
                     </a>
                 </li>
                 <li>
                     <a href="#" class="active">
                         <div class="sr-only">Tech</div>
-                        <div class="hovering"></div>
+                        <div class="hovering"  onclick="Page.Change(3)"></div>
                     </a>
                 </li>
                 <li>
                     <a href="#" class="active">
                         <div class="sr-only">Work</div>
-                        <div class="hovering"></div>
+                        <div class="hovering"  onclick="Page.Change(4)"></div>
                     </a>
                 </li>
                 <li>
                     <a href="#" class="active">
                         <div class="sr-only">Posts</div>
-                        <div class="hovering"></div>
+                        <div class="hovering"  onclick="Page.Change(5)"></div>
                     </a>
                 </li>
                 <li>
                     <a href="#" class="active">
                         <div class="sr-only">Contact</div>
-                        <div class="hovering"></div>
+                        <div class="hovering"  onclick="Page.Change(6)"></div>
                     </a>
                 </li>
             </ul>
+        </div>
+        <div class="content main" style="display:block;">
+            <h1>Main</h1>
+        </div>
+        <div class="content About" style="display:none;">
+            <h1>About</h1>
+        </div>
+        <div class="content Tech" style="display: none;">
+            <h1>Tech</h1>
+        </div>
+        <div class="content Work" style="display: none;">
+            <h1>Work</h1>
+        </div>
+        <div class="content Posts" style="display: none;">
+            <h1>Posts</h1>
+        </div>
+        <div class="content Contact" style="display: none;">
+            <h1>Contact</h1>
         </div>
         <footer></footer>
     </body>
