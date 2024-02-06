@@ -8,30 +8,29 @@ header {
     border-bottom:1px solid black;
 }
 
-.top-menu {
+.top-header {
     border-bottom: 1px solid black;
 }
 
-.top-menu a {
+.top-header a {
     font-size: 13px;
 }
 
 .inner {
     display:grid;
     grid-template-columns:1fr 1fr;
-    margin: 0 30px;
+    margin: 3px 20px;
 }
 
 /* inner-left: top navigation */
 .inner-left {
-    display: flex;
+    display: block;
     justify-content: center;
-}
+} 
 
 .inner-left a {
-    display:inline;
     height:18px;
-    margin:5px;    
+    margin:5px;  
 }
 
 .inner-left img {
@@ -51,7 +50,6 @@ header {
 
 /* 페이지 title 설정 */
 .headernav {
-    display:flex;
     justify-content:left;
     height: 73px;
     background-color: #535353 ;
@@ -95,67 +93,8 @@ header {
     background-color: #535353;
 }
 
-/* 
-.bookmark div, .bookmark button{
-    float: left;
-    font-size: 25px;
-    border: none;
-    outline: none;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    background-color: inherit;
-    margin: 0;
-    overflow: hidden;
-}
- */
 
-/* 
-.bookmark div:hover {
-    background-color:rgb(255, 255, 255);
-}
 
-.dpce, .dpct, .dpcn, .dpco, .dpch, .dpcd {
-  display: none;
-  position:absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.dpce a, .dpct a, .dpcn a, .dpco a, .dpch a, .dpcd a{
-  float: none;
-  color: rgb(255, 255, 255);
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-  background-color: #000000;
-}
-
-.dpce a:hover{
-    background-color: #000000;
-  } 
-.dpct a:hover{
-    background-color: #000000;
-  }
-.dpcn a:hover{
-    background-color: #000000;
-  }
-.dpco a:hover{
-    background-color: #000000;
-  }
-.dpch a:hover{
-    background-color: #000000;
-  }
-.dpcd a:hover{
-    background-color: #000000;
-  }
-.bookmark:hover .dpce, .bookmark:hover .dpct, .bookmark:hover .dpcn, .bookmark:hover .dpco, .bookmark:hover .dpch, .bookmark:hover .dpcd {
-  display: block;
-} */
 
 /* 페이지 전체 a 태그 설정 */
 a {
